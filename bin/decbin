@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Si no se ingresan argumentos, mostramos un mensaje de ayuda
+if [ $# -eq 0 ]; then
+  echo "Uso: decbin {numero} {opcion}"
+  echo "Ejemplos:"
+  echo "decbin 10 1  -> convierte el número 10 a binario (1010)"
+  echo "decbin 1010 2 -> convierte el número 1010 a decimal (10)"
+  exit
+fi
+
+# Asignamos los argumentos ingresados al comando decbin a las variables num y option
+num=$1
+option=$2
+
+# Si la opción es 1, usamos bc para convertir el número a binario
+if [ $option -eq 1 ]; then
+  result=$(echo "obase=2;$num" | bc)
+  echo "$num en binario es $result"
+
+# Si la opción es 2, usamos bc para convertir el número a decimal
+elif [ $option -eq 2 ]; then
+  result=$(echo "ibase=2;$num" | bc)
+  echo "$num en decimal es $result"
+
+# Si la opción no es válida, informamos al usuario
+else
+  echo "Opción no válida. El formato es: decbin {numero} {opcion}"
+fi
