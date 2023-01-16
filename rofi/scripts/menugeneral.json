@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Connections",
+    "command": "/home/luk/.config/rofi/ejecutarsegundomenu.sh",
+    "icon": "moserial"
+  },
+  {
+    "name": "Configuration",
+    "command": "gnome-control-center && notify-send 'Configuration' 'Opening Configuration...'",
+    "icon": "gcompris-edit"
+  },
+  {
+    "name": "Files",
+    "command": "nautilus && notify-send 'Files' 'Opening Files...'",
+    "icon": "system-file-manager"
+  },
+  {
+    "name": "Terminal",
+    "command": "kitty && notify-send 'Terminal' 'Opening Kitty...'",
+    "icon": "kitty"
+  },
+  {
+    "name": "Browser",
+    "command": "firefox && notify-send 'Browser' 'Opening Firefox...'",
+    "icon": "firefox"
+  }
+]

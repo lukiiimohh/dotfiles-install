@@ -1,0 +1,142 @@
+@import "colors/colors.rasi"
+
+configuration {
+  modi:			"window,drun,filebrowser,Menu:/home/luk/.config/rofi/scripts/rofi-json.sh ipselector.json";
+  sidebar-mode:		true;
+  show-icons:		true;
+  icon-theme: "Papirus";
+  sort:			true;
+  sorting-method:	"normal";
+  disable-history:	false;
+  scroll-method:	0;
+  drun-display-format:	"{name}";
+  matching:		"fuzzy";
+  window-thumbnail:	true;
+  display-drun:		"Apps";
+  display-window:	"Windows";
+  display-filebrowser:	"Files";
+
+filebrowser {
+  directories-first:	true;
+  directory:  "/home/luk/";
+  sorting-method:	"name";
+  show-hidden: true;
+  }
+}
+
+mainbox { 
+  children: [ mode-switcher, inputbar, listview ]; 
+  background-color:               @background;
+  spacing:                       	0%;
+  padding:                        10px;
+}
+
+window {    
+    transparency:                   "real";
+    border-color: @background;
+    font: "Iosevka Nerd Font 9";
+	  width:						    36%;
+}
+
+prompt { 
+  enabled: true; 
+  background-color:	@background;
+  padding:		15px;
+  border-radius:	15px;
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "   Search...";
+    padding:                        10px;
+    margin:                         0 1%;
+    blink:                          true;
+    border:                         0px 0px 2px 0px;
+    border-radius:                  6px;
+    border-color:                   @accent;
+}
+
+inputbar {
+  	children: 						[ entry ];
+    background-color:               @background;
+    text-color:                     @background;
+    expand:                         false;
+    margin:                         0px 0px 0px 0px;
+    padding:                        1%;
+}
+
+listview {
+    background-color:               @background;
+    padding:                        10px;
+    columns:                        4;
+    lines:                          3;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+element {
+    orientation:                    vertical;
+    background-color:               @background;
+    text-color:                     @foreground;
+    border-radius:                  0%;
+    padding:                        6px;
+}
+
+element-icon, element-text {
+    background-color:               inherit;
+    text-color:                     inherit;
+}
+
+element-icon {
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           42px;
+    border:                         16px;
+    border-color:                   transparent;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         -12px 0px 12px 0px;
+}
+
+element selected {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    border:                         0px 0px 2px 0px;
+    border-color:                   @border;
+    border-radius:                  10px;
+}
+
+mode-switcher {
+  background-color:	@background;
+  text-color:		@foreground;
+  blink:                          true;
+  margin: 0 1%;
+  border:                         0px 0px 2px 0px;
+  border-radius:                  6px;
+  border-color:                   @accent;
+
+}
+
+button {
+  padding:		8px;
+  background-color:	@background;
+  text-color: @foreground;
+  vertical-align:	0.5; 
+  horizontal-align:	0.5;
+}
+
+button selected {
+  padding:		8px;
+  background-color:	@background-alt;
+  text-color:		@foreground;
+}

@@ -1,0 +1,112 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+  kitty
+
+# program launcher
+super + shift + Return
+  rofi -show drun
+
+# make sxhkd reload its configuration files:
+super + Escape
+  pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+super + shift + {q,r}
+    bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }q
+    bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + {_,shift + }Tab
+    bspc desktop -l {next,previous}
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,space}
+    bspc node -t {tiled,floating}
+
+#
+# focus/swap
+#
+
+# Cambia el focus de la ventana 
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+    bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous desktop in the current monitor
+super + ctrl + {Left,Right}
+    bspc desktop -f {prev,next}.local
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# Preselección de ventanas
+#
+
+# Preseleccionar dirección de la ventana
+super + ctrl + {a,s,w,d}
+	bspc node -p {west,south,north,east}
+
+# Abrir la ventana con más o menos tamaño
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Cancelar la preselección
+super + ctrl + space
+	bspc node -p cancel
+
+#
+# move/resize
+#
+
+# Cambiar tamaño de las ventanas
+#super + r : {super +,shift + super + }a
+#  val={50,10}; bspc node @west -r -${val} || bspc node @east -r -${val}
+#super + r : {super + ,shift + super + }d
+#  val={50,10}; bspc node @west -r +${val} || bspc node @east -r +${val}
+#super + r : {super +,shift + super + }w
+#  val={50,10}; bspc node @north -r -${val} || bspc node @south -r -${val}
+#super + r : {super +,shift + super + }s
+#  val={50,10}; bspc node @north -r +${val} || bspc node @south -r +${val}
+
+# move a floating window
+super + shift + ctrl + {Left,Down,Up,Right}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Custom move/resize
+super + alt + {Left,Down,Up,Right}
+    ~/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+
+super + f
+    firefox
+
+super + m
+  ~/.local/bin/mode toggle
+
+super + x
+	~/.config/bin/xcolor-pick
+
+super + shift + p
+	flameshot gui
+
+super + shift + y
+  rofi -show Menu

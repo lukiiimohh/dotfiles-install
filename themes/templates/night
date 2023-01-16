@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# base
+_DARKER_BG=#eb0dd0
+_BG=#0D0E0F
+_CONTRAST_BG=#191919
+_LIGHTER_BG=#303030
+_FG=#d9d7d6
+
+# --colors--
+
+# black
+_BLACK=#1c252c
+_LIGHT_BLACK=#484e5b
+
+# red
+_RED=#df5b61
+_LIGHT_RED=#f16269
+
+# green
+_GREEN=#78b892
+_LIGHT_GREEN=#8cd7aa
+
+# yellow
+_YELLOW=#de8f78
+_LIGHT_YELLOW=#e9967e
+
+# blue
+_BLUE=#6791c9
+_LIGHT_BLUE=#79aaeb
+
+# magenta
+_MAGENTA=#bc83e3
+_LIGHT_MAGENTA=#c488ec
+
+# cyan
+_CYAN=#67afc1
+_LIGHT_CYAN=#7acfe4
+
+# white
+_WHITE=#d9d7d6
+_LIGHT_WHITE=#e5e5e5
+
+# ---- misc -----
+
+_WALLPAPER=$HOME/.config/themes/wallpapers/morty.jpg
+#_WALLPAPER=$HOME/Downloads/morty3short.jpg

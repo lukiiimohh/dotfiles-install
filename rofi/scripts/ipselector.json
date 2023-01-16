@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Target To Hack",
+    "command": "/home/luk/.config/eww/scripts/copyiptarget.sh",
+    "icon": "mog"
+  },
+  {
+    "name": "VPN",
+    "command": "/home/luk/.config/eww/scripts/copyipvpn.sh",
+    "icon": "network-server"
+  },
+  {
+    "name": "Ethernet",
+    "command": "/home/luk/.config/rofi/scripts/copyipethernet.sh",
+    "icon": "preferences-system-network"
+  },
+  {
+    "name": "User 1",
+    "command": "/home/luk/.config/rofi/scripts/copyuser1.sh",
+    "icon": "gksu"
+  },
+  {
+    "name": "Pass 1",
+    "command": "/home/luk/.config/rofi/scripts/copyuser1pass.sh",
+    "icon": "keepass"
+  },
+  {
+    "name": "DB Credentials",
+    "command": "/home/luk/.config/rofi/scripts/copydb.sh",
+    "icon": "kontact"
+  },
+  {
+    "name": "User 2",
+    "command": "/home/luk/.config/rofi/scripts/copyuser2.sh",
+    "icon": "system-users"
+  },
+  {
+    "name": "Pass 2",
+    "command": "/home/luk/.config/rofi/scripts/copyuser2pass.sh",
+    "icon": "keepass"
+  },
+  {
+    "name": "Main Page",
+    "command": "/home/luk/.config/rofi/scripts/copymainpage.sh",
+    "icon": "gargoyle-house"
+  }
+]
