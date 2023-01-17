@@ -21,6 +21,8 @@ function script () {
 }
 
 # commands working and keyboard (luk)
+eww daemon -c ~/.config/eww
+eww open bar
 export PATH=$PATH:/bin:/usr/bin
 setxkbmap es
 vmware-user-suid-wrapper
