@@ -53,6 +53,7 @@ alias btw="/usr/bin/neofetch"
 alias luk="python3 ~/.config/bin/whoami.py"
 alias catn="/usr/bin/cat"
 alias nv="nvim"
+alias themer="~/.config/bin/themer"
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
