@@ -1,7 +1,7 @@
 @import "colors/colors.rasi"
 
 configuration {
-  modi:			"window,drun,filebrowser,Menu:/home/luk/.config/rofi/scripts/rofi-json.sh ipselector.json";
+  modi:			"window,drun,filebrowser,Menu:~/.config/rofi/scripts/rofi-json.sh ipselector.json";
   sidebar-mode:		true;
   show-icons:		true;
   icon-theme: "Papirus";
