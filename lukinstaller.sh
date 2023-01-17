@@ -36,7 +36,7 @@ clear
 echo -e "\n${greenColour}[+]${endColour} ${grayColour}Bienvenido a la Instalación de mis dotfiles (luk), están inspirados en${endColour} ${blueColour}https://github.com/AlphaTechnolog/dotfiles/tree/bspwm${endColour}"
 sleep 2
 echo -e "\t\n${redColour}[!] RECUERDA QUE PARA INSTALAR ESTOS DOTFILES TIENES QUE:${endColour}"
-echo -e "\n\t${purpleColour}- ${endColour}${grayColour}Tener el repositorio de mi github ${blueColour}https://github.com/lukiiimohh/dotfiles-install.git${endColour} ${grayColour}clonado en tu${endColour} ${blueColour}/home/$USER${endColour}"
+echo -e "\n\t${purpleColour}- ${endColour}${grayColour}Tener el repositorio de mi github ${blueColour}https://github.com/lukiiimohh/dotfiles-install.git${endColour} ${grayColour}clonado en tu${endColour} ${blueColour}/home/$USER/${endColour}"
 echo -e "\n\t${purpleColour}- ${endColour}${grayColour}Tienes que estar relativamente atento, a pesar de estar automatizado hay puntos en los que pide tu contraseña"
 sleep 10
 echo -e "\t\n${redColour}[!] Si no cumples con estos requisitos haz CTRL+C y ajustate a los mismos, luego vuelve a correr el script. Tienes 15 segundos${endColour}"
