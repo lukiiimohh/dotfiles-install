@@ -57,7 +57,7 @@ fi
 # rules
 script rules.sh
 
-feh --bg-scale /home/luk/.Wallpapers/mortynoon.jpg
+feh --bg-scale ~/.Wallpapers/mortynoon.jpg
 
 flameshot &
 
