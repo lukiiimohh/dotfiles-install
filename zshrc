@@ -67,7 +67,7 @@ function mkt(){
 
 ###############################################################################################################
 
-# Funciones para copiar ips
+# Functions for giving data to... IP's
 
 function settarget(){
 	ip_adress=$1
@@ -104,10 +104,13 @@ function setmainpage(){
 }
 
 ###############################################################################################################
+
+# Cute neofetch
 function sysfetch(){
 	~/.config/bin/sys-fetch
 }
 
+# Function to go back X directories with 'cdback X'
 function cdback() {
   local num=$1
   if [[ -z $num ]]; then
@@ -118,95 +121,6 @@ function cdback() {
     num=$((num-1))
   done
 }
-
-##############################################################################################################################################
-
-#OverTheWire en bash con function (flag -l)
-
-function otw () {
-  if [ $# -eq 0 ]
-  then
-    # Leer la contraseña y el nivel desde la entrada estándar
-    printf "Ingrese el nivel: "
-    read -r level
-    printf "Ingrese la contraseña: "
-    read -r password
-
-    # Conectarse de manera automática al laboratorio
-    sshpass -p "$password" ssh -t -o StrictHostKeyChecking=no bandit$level@bandit.labs.overthewire.org -p 2220 "export TERM=xterm; bash"
-
-    # Escribir las variables en el archivo LVL:PASS
-    printf "Nivel: %s\tContraseña: %s\n" "$level" "$password" >> ~/Desktop/AcademiaS4vi/OverTheWire/LVL_PASS
-  else
-    if [ "$1" = "-l" ]
-    then
-      # Obtener la última línea del archivo LVL:PASS
-      last_line=$(tail -n 1 ~/Desktop/AcademiaS4vi/OverTheWire/LVL_PASS)
-
-      # Extraer el nivel y la contraseña de la última línea
-      level=$(echo "$last_line" | awk '{print $2}')
-      password=$(echo "$last_line" | awk '{print $4}')
-
-      # Conectarse de manera automática al laboratorio
-      sshpass -p "$password" ssh -t -o StrictHostKeyChecking=no bandit$level@bandit.labs.overthewire.org -p 2220 "export TERM=xterm; bash"
-    else
-      echo "Parámetro no válido"
-    fi
-  fi
-}
-
-
-##############################################################################################################################################
-
-##############################################################################################################################################
-
-# GTFOBINS en bash con function
-function gtfobins(){
-
-#!/bin/bash
-
-# Parseamos los argumentos de la línea de comandos
-while getopts ":f:" opt; do
-  case $opt in
-    f) file="$OPTARG"
-    ;;
-    \?) echo "Opción inválida: -$OPTARG" >&2
-    exit 1
-    ;;
-  esac
-done
-
-# Comprobamos que el archivo especificado en el flag -f existe
-if [ ! -f "$file" ]; then
-    echo "Error: el archivo especificado no existe"
-    echo "Ejecución correcta: bash script.sh -f /ruta/al/archivo"
-    exit 1
-fi
-
-# Comprobamos que se ha especificado el flag -f
-if [ -z "$file" ]; then
-    echo "Error: no se ha especificado la ruta del archivo a analizar"
-    echo "Ejecución correcta: bash script.sh -f /ruta/al/archivo"
-    exit 1
-fi
-
-# Inicializamos un contador
-counter=1
-
-# Abrimos el archivo y leemos las líneas
-while read -r line; do
-  line=$(basename "$line" | tr -d '\r')
-  r=$(curl -s "https://gtfobins.github.io/gtfobins/$line/")
-  if [ "$?" -eq 0 ] && echo "$r" | grep -q "GTFOBins"; then
-    # Imprimimos la numeración y el resultado
-    printf "%s. %s es una vía potencial para escalar privilegios: https://gtfobins.github.io/gtfobins/%s/\n" "$counter" "${line^}" "$line"
-    # Incrementamos el contador
-    ((counter++))
-  fi
-done < "$file"
-}
-
-##############################################################################################################################################
 
 # Extract nmap information
 function extractPorts(){
