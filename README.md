@@ -9,7 +9,7 @@
 
 <div align="left">
 
-## ℹ️ Información</samp>
+## Información ℹ️
 
 Detalles sobre el setup:
 
