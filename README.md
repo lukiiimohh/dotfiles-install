@@ -31,6 +31,8 @@ Detalles sobre el setup:
 Recomiendo leer el README entero.
 Una vez tengas el entorno instalado ya sea con el script o sin él, te recomiendo mirar todos los alias y funciones del archivo `.zshrc` en `/home/$USER/.zshrc`.  
 También te recomiendo leer los atajos de teclado definidos en el `sxhkdrc` en `~/.config/sxhkd/sxhkdrc`.  
+Si vas a usar `archinstall` para instalar Arch y así probar el entorno te recomiendo esta configuración de `archinstall`
+<img src="icons/archinstall.png" width="550px"/>
   
 **Si usas el script**  
 Debes ajustarte a los parámetros que se especifican antes de iniciar el script.  
