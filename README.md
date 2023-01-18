@@ -22,11 +22,33 @@ Detalles sobre el setup:
 - **Editor:** [neovim](https://github.com/neovim/neovim)
 - **Compositor:** [picom](https://github.com/yshui/picom)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+
+## Leer 📖
+<details>
+<summary>📖📖📖</summary>  
+
+**Generales**  
+Recomiendo leer el README entero.
+Una vez tengas el entorno instalado ya sea con el script o sin él, te recomiendo mirar todos los alias y funciones del archivo `.zshrc` en `/home/$USER/.zshrc`.  
+También te recomiendo leer los atajos de teclado definidos en el `sxhkdrc` en `~/.config/sxhkd/sxhkdrc`.  
   
+**Si usas el script**  
+Debes ajustarte a los parámetros que se especifican antes de iniciar el script.  
+El script tarda más o menos depende de tu conexión a internet, debido a que tiene que descargar cosas externas al repositorio.  
   
+**Al finalizar el script**  
+Asegurate de haber escogido bspwm en el gestor de ventanas de tu sistema.
+La primera vez que inicies `nvim` va a dar un error, solo presiona `ENTER` y ya no volverá a suceder.
+Puedes borrar de tu `/home/$USER` todo lo relacionado a `dotfiles-install`.
+
+</details>
+
 ## Requerimientos ❗
-  
-Abre la terminal y copia estas líneas:
+
+<details>
+<summary>❗❗❗</summary>
+
+**Abre la terminal y copia estas líneas:**
 
 ---
  
@@ -39,11 +61,12 @@ Abre la terminal y copia estas líneas:
 ```sh
 sudo pacman -Sy --noconfirm git
 ```
+</details>
 
----
     
 ## Uso 🚀
-
+<details>
+<summary>🚀🚀🚀</summary>
 ```sh
 # No ejecutes el script con sudo, te pedirá la contraseña cuando la necesita
 cd /home/$USER
@@ -53,9 +76,12 @@ chmod +x lukinstaller.sh
 ./lukinstaller.sh
 # No omitas el paso del chmod +x lukinstaller.sh y trates de ejecutarlo con bash lukinstaller.sh (puede dar problemas).
 ```
-   
-## Paquetes Instalados 📦
 
+</details>
+
+## Paquetes Instalados 📦
+<details>
+<summary>📦📦📦</summary>
 <div align="center"> 
   
 ### <img width="15px" src="icons/arch-linux-icon.png" />rch
@@ -73,14 +99,45 @@ chmod +x lukinstaller.sh
 |                | Rofi                     |                            | Neovim             | Pavucontrol           |                   |
 |                | Playerctl                |                            |  JQ                | Gpick                 |                   |
 
+</details>
+
 <div align="left">
-       
+
+## Atajos de ⌨️
+<details>
+<summary>⌨️⌨️⌨️</summary>  
+
+| **Atajo** | **Acción** |
+|--------------|-------------|
+|super + shift + return|Abrir rofi|
+|super + m|Mostrar barra EWW|
+|super + f|Abrir Firefox|
+|super + x|Abrir el color picker|
+|super + @space|Hacer una ventana `tile` > `floating`
+|super + t|Hacer una ventana `floating` > `tile`|
+|super + alt + {Left,Up,Down,Right}|Cambiar el tamaño a una ventana|
+|super + shift + ctrl + {Left,Up,Down,Right}|Mover una ventana flotante|
+|super + escape|Reiniciar sxhkd|
+|super + shift + q|Quitar bspwm|
+|super + shift + r|Reiniciar bspwm|
+|super + q|Cerrar ventana|
+|super + shift + y|Abrir menú personalizado rofi|
+|super + f|Cambiar a modo pantalla completa|
+|super + ctrl + {Left,Right}|Moverse entre escritorios|
+|shift + {Left,Up,Down,Right}|Moverse en los menús de la rofi|
+
+</details>
+
 ## Extra 😎
+
+<details>
+<summary>😎😎😎</summary>
+
 En el entorno hay una herramienta que permite el ricing con multitemas, la herramienta la puedes ejecutar con:
 ```sh
 themer -h
 ```
-
+</details>
   
 ## Galería 📸
 <img src="/icons/tolascosas.jpg" />
