@@ -13,7 +13,7 @@
 
 Detalles sobre el setup:
 
-<img src="icons/neofetch.png" align="right" width="600px"/>
+<img src="icons/neofetch.png" align="right" width="550px"/>
 
 - **OS:** [Arch Linux](https://archlinux.org)
 - **WM:** [bspwm](https://github.com/baskerville/bspwm)
