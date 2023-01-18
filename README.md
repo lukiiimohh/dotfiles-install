@@ -39,7 +39,8 @@ El script tarda más o menos depende de tu conexión a internet, debido a que ti
 **Al finalizar el script**  
 Asegurate de haber escogido bspwm en el gestor de ventanas de tu sistema.
 La primera vez que inicies `nvim` va a dar un error, solo presiona `ENTER` y ya no volverá a suceder.
-Puedes borrar de tu `/home/$USER` todo lo relacionado a `dotfiles-install`.
+Puedes borrar de tu `/home/$USER` todo lo relacionado a `dotfiles-install`.  
+Si quieres que todo lo relacionado a copiar y pegar IP's funcione debes mirar tanto `~/.config/eww/scripts` como `~/.config/rofi/scripts`.
 
 </details>
 
