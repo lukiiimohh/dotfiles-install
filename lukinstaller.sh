@@ -21,7 +21,7 @@ trap ctrl_c INT
 
 #Si es root salimos
 if [ "$(whoami)" == "root" ]; then
-  echo -e "\n${redColour}[!] No puedes estar como root${endColour}" && exit 1; tput cnorm
+  echo -e "\n${redColour}[!] No puedes estar como root${endColour}\n" && exit 1; tput cnorm
 fi
 
 USER=$(whoami)
