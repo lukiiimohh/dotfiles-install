@@ -70,6 +70,7 @@ sudo pacman -Sy --noconfirm git
 ## Uso 🚀
 <details>
 <summary>🚀🚀🚀</summary>
+
 ```sh
 # No ejecutes el script con sudo, te pedirá la contraseña cuando la necesita
 cd /home/$USER
@@ -77,7 +78,7 @@ git clone https://github.com/lukiiimohh/dotfiles-install.git
 cd ~/dotfiles-install/
 chmod +x lukinstaller.sh
 ./lukinstaller.sh
-# No omitas el paso del chmod +x lukinstaller.sh y trates de ejecutarlo con bash lukinstaller.sh (puede dar problemas).
+# No omitas el paso del chmod +x lukinstaller.sh y trates de ejecutarlo con bash lukinstaller.sh (puede dar problemas).  
 ```
 
 </details>
