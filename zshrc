@@ -72,34 +72,34 @@ function mkt(){
 function settarget(){
 	ip_adress=$1
 	machine_name=$2
-	echo "$ip_adress $machine_name" > /home/luk/.config/eww/scripts/target
+	echo "$ip_adress $machine_name" > ~/.config/eww/scripts/target
   notify-send "SYSTEM" "Target: $ip_adress - $machine_name"
 }
 
 function setuser1(){
   user1=$1
   user1pass=$2
-  echo "$user1 $user1pass" > /home/luk/.config/rofi/scripts/credentials/user1creds
+  echo "$user1 $user1pass" > ~/.config/rofi/scripts/credentials/user1creds
   notify-send "SYSTEM" "User 1: $user1 - $user1pass"
 }
 
 function setuser2(){
   user2=$1
   user2pass=$2
-  echo "$user2 $user2pass" > /home/luk/.config/rofi/scripts/credentials/user2creds
+  echo "$user2 $user2pass" > ~/.config/rofi/scripts/credentials/user2creds
   notify-send "SYSTEM" "User 2: $user2 - $user2pass"
 }
 
 function setdbcreds(){
   db_user=$1
   db_user_pass=$2
-  echo "$db_user $db_user_pass" > /home/luk/.config/rofi/scripts/credentials/db_user_creds
+  echo "$db_user $db_user_pass" > ~/.config/rofi/scripts/credentials/db_user_creds
   notify-send "SYSTEM" "DB User: $db_user - $db_user_pass"
 }
 
 function setmainpage(){
   mainpage=$1
-  echo "$mainpage" > /home/luk/.config/rofi/scripts/credentials/mainpage
+  echo "$mainpage" > ~/.config/rofi/scripts/credentials/mainpage
   notify-send "SYSTEM" "Main Page: $mainpage"
 }
 
