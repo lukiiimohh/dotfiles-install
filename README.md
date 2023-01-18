@@ -5,7 +5,7 @@
 
 <div align="center">
   
-**_Con script autoinstaller  & based on AlphaTechnolog_**
+**_Con script autoinstaller & basados en AlphaTechnolog_**
 
 <div align="left">
 
@@ -94,4 +94,4 @@ VMWare Workstation Pro 16 / Usando la .iso de los repositorios oficiales de ARCH
 
 ## Gracias a 😁
 - [alpha](https://github.com/AlphaTechnolog)
-- and all the helpers of the original dotfiles...
+- y todos los demás ayudantes de los dotfiles originales...
