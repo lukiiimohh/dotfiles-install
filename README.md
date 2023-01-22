@@ -126,7 +126,6 @@ chmod +x lukinstaller.sh
 |super + shift + r|Reiniciar bspwm|
 |super + q|Cerrar ventana|
 |super + shift + y|Abrir menú personalizado rofi|
-|super + f|Cambiar a modo pantalla completa|
 |super + ctrl + {Left,Right}|Moverse entre escritorios|
 |shift + {Left,Up,Down,Right}|Moverse en los menús de la rofi|
 
