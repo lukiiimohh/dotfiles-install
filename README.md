@@ -148,9 +148,10 @@ themer -h
 
 ## AutoInstaller 📋
 El autoinstaller solo ha sido puesto en prueba en las siguientes condiciones: 
-VMWare Workstation Pro 16 / Usando la .iso de los repositorios oficiales de ARCH. Además de que se ha probado teniendo instalado el entorno gráfico de GNOME DESKTOP.  
+ - VMWare Workstation Pro 16 / Usando la .iso de los repositorios oficiales de ARCH. Además de que se ha probado teniendo instalado el entorno gráfico de GNOME DESKTOP.  
+ - Sistema Nativo, usando ARCHINSTALL y con la .iso de los repositorios oficiales de ARCH. Entorno gráfico GNOME DESKTOP.  
   
-  Si alguien está dispuesto a probarlo en nativo/otro tipo de configuraciones que me notifique en discord `lukiiimohh#0633` ¡para así ir pudiendo actualizar esta parte!
+Si alguien está dispuesto a probarlo en nativo/otro tipo de configuraciones que me notifique en discord `lukiiimohh#0633` ¡para así ir pudiendo actualizar esta parte!
 
 ## Gracias a 😁
 - [alpha](https://github.com/AlphaTechnolog)
