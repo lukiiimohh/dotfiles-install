@@ -1,6 +1,6 @@
 ## <img src="/icons/espana.png" width="25px"/>
 <details>
-<summary>README.md</summary>
+<summary>README en Español</summary>
 
 <h1 align="center">
   <img width=25px src=icons/linux-tux.png>
@@ -165,7 +165,7 @@ Si alguien está dispuesto a probarlo en nativo/otro tipo de configuraciones que
 
 ## <img src="/icons/reino-unido.png" width="25px"/>
 <details>
-<summary>README.md</summary>
+<summary>English README</summary>
   
 <h1 align="center">
   <img width=25px src=icons/linux-tux.png>
