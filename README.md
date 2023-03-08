@@ -100,12 +100,12 @@ chmod +x lukinstaller.sh
 |                | Bspwm                    | Wget                       | Zsh                | Acpi                  | Gtk-layer-shell   |
 |                | Sxhkd                    | Curl                       | Bat                | Acpid                 | Pango             |
 |                | Picom                    | Rustup                     | Starship           | Xcursor-themes        | Gdk-pixbuf2       |
-|                | Feh                      |                            | Lsd                | Lxappearance          | Cairo             |
+|                | Feh                      | JQ                         | Lsd                | Lxappearance          | Cairo             |
 |                | Bat                      |                            | Neofetch           | Xcursor-flatbed       | Glib2             |
 |                | Exa                      |                            | Xclip              | Locate                | GCC-libs          |
 |                | Dunst                    |                            | Vim                | Flameshot             | Glibc             |
 |                | Rofi                     |                            | Neovim             | Pavucontrol           |                   |
-|                | Playerctl                |                            |  JQ                | Gpick                 |                   |
+|                | Playerctl                |                            |                    | Gpick                 |                   |
 
 </details>
 
@@ -265,12 +265,12 @@ chmod +x lukinstaller.sh
 |                | Bspwm                    | Wget                       | Zsh                | Acpi                  | Gtk-layer-shell   |
 |                | Sxhkd                    | Curl                       | Bat                | Acpid                 | Pango             |
 |                | Picom                    | Rustup                     | Starship           | Xcursor-themes        | Gdk-pixbuf2       |
-|                | Feh                      |                            | Lsd                | Lxappearance          | Cairo             |
+|                | Feh                      | JQ                         | Lsd                | Lxappearance          | Cairo             |
 |                | Bat                      |                            | Neofetch           | Xcursor-flatbed       | Glib2             |
 |                | Exa                      |                            | Xclip              | Locate                | GCC-libs          |
 |                | Dunst                    |                            | Vim                | Flameshot             | Glibc             |
 |                | Rofi                     |                            | Neovim             | Pavucontrol           |                   |
-|                | Playerctl                |                            |  JQ                | Gpick                 |                   |
+|                | Playerctl                |                            |                    | Gpick                 |                   |
 
 </details>
 
