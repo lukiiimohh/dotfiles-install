@@ -48,6 +48,9 @@ La primera vez que inicies `nvim` va a dar un error, solo presiona `ENTER` y ya 
 Puedes borrar de tu `/home/$USER` todo lo relacionado a `dotfiles-install`.  
 Si quieres que todo lo relacionado a copiar y pegar IP's funcione debes mirar tanto `~/.config/eww/scripts` como `~/.config/rofi/scripts`.
 
+**AÑADIDO DESPUÉS**
+Los dotfiles estan hechos en gnome, así que si vais a instalar Arch con `archinstall`, debereís de seleccionar gnome. Yo uso gnome para la pantalla de bloqueo y algunas cosas útiles que trae gnome. Una vez que ya tengais instalado Arch y gnome, debeis entrar en una consola y ejecutar el script de instalación, una vez que el script haya terminado, simplemente hay que reiniciar la máquina y a la hora de loguearse a tu usuario, en gnome aparece una rueda dentada en la esquina inferiror derecha, dar click ahí y seleccionar `bspwm` .
+
 </details>
 
 ## Requerimientos ❗
@@ -200,7 +203,7 @@ Details about the setup:
 I recommend reading the entire README.
 Once your have the dotfiles installed with script or without it, I recommend you to look all the aliases and functions from `.zshrc` in `/home/$USER/.zshrc`.  
 Also I recommend you to read al the shortcuts defined in `sxhkdrc` in `~/.config/sxhkd/sxhkdrc`.  
-If you are going to use `archinstall` to install A0rch and give a try to the dotfiles y recommend you this confiuration.
+If you are going to use `archinstall` to install Arch and give a try to the dotfiles I would recommend you this configuration.
 <img src="icons/archinstall.png" width="550px"/>
   
 **If you use the script**  
@@ -212,6 +215,9 @@ Be aware of choosing `BSPWM` as window manager.
 The first time you start `nvim` it is going to give an error, just press `ENTER` and it wont happen again.
 You can delete from your `/home/$USER` all in relation to `dotfiles-install`.  
 If you want to understand all about the `IP MENU'S` you should look in `~/.config/eww/scripts` and `~/.config/rofi/scripts`.
+
+**ADDED LATER + INFO TO KNOW**
+This dotfiles are gnome based, so in if you run `archinstall` you should select gnome, I just used gnome for the lockscreen and another cool stuff gnome had and it was easy to deal with. But once you have gnome installed you need to run the script, only when you have already gnome installed, once you've done this, you reboot the machine and select in the cogwheel `bspwm`.
 
 </details>
 
